@@ -8,6 +8,25 @@
 </head>
 
 <body>
+    //Cau 2
+    <table border="1" align="center">
+        <tr>
+            <?php
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<th>Chuong $i</th>";
+            }
+            ?>
+        </tr>
+        <?php
+        for ($i = 1; $i <= 10; $i++){
+            echo "<tr>";
+            for ($j = 1; $j <= 10; $j++){
+                echo "<td>$i x $j=". $i*$j."</td>";
+            }
+            echo "</tr>";
+        }
+        ?>
+    </table>
     <?php
     //Cau 1
     echo "<br>Cau 1: ";
@@ -17,16 +36,6 @@
     for ($i = 1; $i <= $N; $i++) {
         if ($i % 2 == 0)
             echo "$i ";
-    }
-
-    //Cau 2
-    echo "<br>Cau 2: ";
-    for ($i = 1; $i <= 10; $i++) {
-        echo "<br>Bang cuu chuong $i: ";
-        for ($j = 1; $j <= 10; $j++) {
-            $ket_qua = $i * $j;
-            echo "<br>$i x $j = $ket_qua ";
-        }
     }
 
     //Cau 3
